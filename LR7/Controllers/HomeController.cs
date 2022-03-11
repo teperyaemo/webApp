@@ -91,15 +91,15 @@ namespace LR7.Controllers
             Matrix mat = new Matrix(multi_A, multi_B, Num1_1, Num1_2, Num1_3, Num2_1, Num2_2, Num2_3, Num3_1, Num3_2, Num3_3, B_Num1_1, B_Num1_2, B_Num1_3, B_Num2_1, B_Num2_2, B_Num2_3, B_Num3_1, B_Num3_2, B_Num3_3);
             int[,] carray = new int[3, 3];
             carray = mat.umn();
-            ViewBag.c1_1 = carray[1, 1];
-            ViewBag.c1_2 = carray[1, 2];
-            ViewBag.c1_3 = carray[1, 3];
-            ViewBag.c2_1 = carray[2, 1];
-            ViewBag.c2_2 = carray[2, 2];
-            ViewBag.c2_3 = carray[2, 3];
-            ViewBag.c3_1 = carray[3, 1];
-            ViewBag.c3_2 = carray[3, 2];
-            ViewBag.c3_3 = carray[3, 3];
+            ViewBag.c1_1 = carray[0, 1];
+            ViewBag.c1_2 = carray[0, 1];
+            ViewBag.c1_3 = carray[0, 2];
+            ViewBag.c2_1 = carray[1, 0];
+            ViewBag.c2_2 = carray[1, 1];
+            ViewBag.c2_3 = carray[1, 2];
+            ViewBag.c3_1 = carray[2, 0];
+            ViewBag.c3_2 = carray[2, 1];
+            ViewBag.c3_3 = carray[2, 2];
             return View();
         }
 
